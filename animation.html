@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .parent{
+            background-color:orange;
+            width:400px;
+            height: 400px;
+            position: fixed;
+            margin: 100px;
+            margin-left: 600px;
+        }
+        .child{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            margin-left: 150px;
+            position: relative;
+            margin-top: 130px;
+            animation-name: sun;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-duration: alternate-reverse;
+        }
+        .child1{
+            background-color: orangered;
+            height:100px ;
+            width: 100px;
+            border-radius: 50px;
+            margin-left: 150px;
+            position: absolute;
+            margin-top:-100px;
+        }  
+        @keyframes sun{
+            0%{
+                top: 20px;
+                left:20px;
+            }
+            25%{
+                top:0px;
+                left:0px;
+            }
+            75%{
+                width: 120px;
+                height:120px;
+                border-radius: 50px;
+            }
+            100%{
+
+            }
+        }  
+        
+
+    </style>
+</head>
+<body>
+    <div class="parent" >
+    <div class="child" ></div>
+    <div class="child1"></div>
+    </div>
+</body>
+</html>
