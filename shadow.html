@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shodow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box ;
+        }
+        .parent{
+         gap:5rem;
+         display: flex;
+         
+         }
+          body{
+            background-color: aqua;
+            min-height:100vh;
+            color:blueviolet;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-image: url("https://media.istockphoto.com/id/1457979959/photo/snack-junk-fast-food-on-table-in-restaurant-soup-sauce-ornament-grill-hamburger-french-fries.jpg?s=612x612&w=0&k=20&c=QbFk2SfDb-7oK5Wo9dKmzFGNoi-h8HVEdOYWZbIjffo=");
+        }
+        .child{
+            background:violet ;
+            border-radius: 5px;
+            box-shadow: 0 4px 15px rgb(0, 0, 128);
+            text-align: center;
+            padding: 2rem 3rem;
+            display: flex;
+        }
+        h2{
+            font-size: 2rem;
+            color: blue;
+            text-shadow: 3px 3px 3px black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="child" >
+        <h2>Biriyani</h2>
+    </div>
+    <div class="child">
+        <h2>Chiken Tikka</h2>
+    </div>
+    <div class="child">
+        <h2>panner Biriyani</h2>
+
+    </div>
+
+    </div>
+</body>
+</html>
